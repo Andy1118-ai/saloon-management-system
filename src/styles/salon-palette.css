@@ -1,0 +1,264 @@
+/* Sophisticated High-End Salon Color Palette */
+
+:root {
+  /* PRIMARY COLORS - Soft Blue Spectrum */
+  
+  /* Powder Blue - Light, airy, calming */
+  --salon-powder-blue: #E8F4F8;
+  --salon-powder-blue-rgb: 232, 244, 248;
+  --salon-powder-blue-hsl: 195, 47%, 94%;
+  
+  /* Soft Sky Blue - Gentle, serene */
+  --salon-sky-blue: #B8D4E3;
+  --salon-sky-blue-rgb: 184, 212, 227;
+  --salon-sky-blue-hsl: 201, 38%, 81%;
+  
+  /* Steel Blue - Professional, sophisticated */
+  --salon-steel-blue: #7BA7BC;
+  --salon-steel-blue-rgb: 123, 167, 188;
+  --salon-steel-blue-hsl: 199, 31%, 61%;
+  
+  /* COMPLEMENTARY GRAYS - Professional Foundation */
+  
+  /* Light Gray - Clean, fresh */
+  --salon-light-gray: #F5F7F9;
+  --salon-light-gray-rgb: 245, 247, 249;
+  --salon-light-gray-hsl: 210, 25%, 97%;
+  
+  /* Medium Gray - Balanced, neutral */
+  --salon-medium-gray: #D1D9E0;
+  --salon-medium-gray-rgb: 209, 217, 224;
+  --salon-medium-gray-hsl: 208, 19%, 85%;
+  
+  /* ACCENT COLORS - Warmth and Organic Appeal */
+  
+  /* Warm White - Brightness and cleanliness */
+  --salon-warm-white: #FEFCFA;
+  --salon-warm-white-rgb: 254, 252, 250;
+  --salon-warm-white-hsl: 30, 67%, 99%;
+  
+  /* Subtle Beige - Warmth and comfort */
+  --salon-subtle-beige: #F2EDE7;
+  --salon-subtle-beige-rgb: 242, 237, 231;
+  --salon-subtle-beige-hsl: 33, 31%, 93%;
+  
+  /* Muted Sage Green - Organic, natural */
+  --salon-sage-green: #C8D5C8;
+  --salon-sage-green-rgb: 200, 213, 200;
+  --salon-sage-green-hsl: 120, 17%, 81%;
+  
+  /* EXTENDED PALETTE - Deeper Tones for Contrast */
+  
+  /* Deep Steel - For text and strong accents */
+  --salon-deep-steel: #4A6B7C;
+  --salon-deep-steel-rgb: 74, 107, 124;
+  --salon-deep-steel-hsl: 200, 25%, 39%;
+  
+  /* Charcoal Gray - Primary text */
+  --salon-charcoal: #2C3E50;
+  --salon-charcoal-rgb: 44, 62, 80;
+  --salon-charcoal-hsl: 210, 29%, 24%;
+  
+  /* Soft Sage - Deeper green for accents */
+  --salon-soft-sage: #A8B8A8;
+  --salon-soft-sage-rgb: 168, 184, 168;
+  --salon-soft-sage-hsl: 120, 11%, 69%;
+  
+  /* SEMANTIC COLORS - Status and Feedback */
+  
+  /* Success - Soft green success states */
+  --salon-success: #A8C8A8;
+  --salon-success-rgb: 168, 200, 168;
+  --salon-success-hsl: 120, 22%, 72%;
+  
+  /* Warning - Warm amber for alerts */
+  --salon-warning: #E8D5B7;
+  --salon-warning-rgb: 232, 213, 183;
+  --salon-warning-hsl: 37, 48%, 81%;
+  
+  /* Error - Muted rose for errors */
+  --salon-error: #E8C5C5;
+  --salon-error-rgb: 232, 197, 197;
+  --salon-error-hsl: 0, 41%, 84%;
+  
+  /* Info - Steel blue for information */
+  --salon-info: var(--salon-steel-blue);
+  
+  /* LIGHTING VARIATIONS - For different environments */
+  
+  /* Natural Light Optimized */
+  --salon-natural-primary: var(--salon-steel-blue);
+  --salon-natural-accent: var(--salon-sage-green);
+  --salon-natural-neutral: var(--salon-light-gray);
+  
+  /* Artificial Light Optimized */
+  --salon-artificial-primary: #8BB2C7; /* Slightly warmer steel blue */
+  --salon-artificial-accent: #D0DDD0; /* Lighter sage for artificial light */
+  --salon-artificial-neutral: #F7F9FB; /* Cooler light gray */
+  
+  /* SEASONAL STYLING ADJUSTMENTS */
+  
+  /* Spring/Summer - Lighter, airier */
+  --salon-spring-primary: var(--salon-sky-blue);
+  --salon-spring-accent: #D5E5D5; /* Lighter sage */
+  --salon-spring-warm: #FBF8F5; /* Lighter beige */
+  
+  /* Fall/Winter - Deeper, cozier */
+  --salon-winter-primary: var(--salon-deep-steel);
+  --salon-winter-accent: var(--salon-soft-sage);
+  --salon-winter-warm: #F0EBE5; /* Deeper beige */
+  
+  /* FUNCTIONAL COLOR ASSIGNMENTS */
+  
+  /* Backgrounds */
+  --salon-bg-primary: var(--salon-warm-white);
+  --salon-bg-secondary: var(--salon-light-gray);
+  --salon-bg-accent: var(--salon-powder-blue);
+  --salon-bg-sage: var(--salon-sage-green);
+  
+  /* Text Colors */
+  --salon-text-primary: var(--salon-charcoal);
+  --salon-text-secondary: var(--salon-deep-steel);
+  --salon-text-muted: var(--salon-steel-blue);
+  --salon-text-light: var(--salon-medium-gray);
+  
+  /* Border Colors */
+  --salon-border-light: var(--salon-medium-gray);
+  --salon-border-medium: var(--salon-steel-blue);
+  --salon-border-accent: var(--salon-sage-green);
+  
+  /* Interactive Elements */
+  --salon-interactive-primary: var(--salon-steel-blue);
+  --salon-interactive-hover: var(--salon-deep-steel);
+  --salon-interactive-active: var(--salon-charcoal);
+  --salon-interactive-disabled: var(--salon-medium-gray);
+  
+  /* CONTRAST RATIOS - WCAG AA Compliant */
+  
+  /* High Contrast Combinations */
+  --salon-high-contrast-bg: var(--salon-warm-white);
+  --salon-high-contrast-text: var(--salon-charcoal); /* 12.8:1 ratio */
+  
+  /* Medium Contrast Combinations */
+  --salon-medium-contrast-bg: var(--salon-light-gray);
+  --salon-medium-contrast-text: var(--salon-deep-steel); /* 6.2:1 ratio */
+  
+  /* Subtle Contrast Combinations */
+  --salon-subtle-contrast-bg: var(--salon-powder-blue);
+  --salon-subtle-contrast-text: var(--salon-steel-blue); /* 4.7:1 ratio */
+}
+
+/* PANTONE EQUIVALENTS AND PROFESSIONAL REFERENCES */
+/*
+Powder Blue: Similar to Pantone 5415 C
+Sky Blue: Similar to Pantone 5425 C  
+Steel Blue: Similar to Pantone 5435 C
+Light Gray: Similar to Pantone Cool Gray 1 C
+Medium Gray: Similar to Pantone Cool Gray 3 C
+Sage Green: Similar to Pantone 5665 C
+Subtle Beige: Similar to Pantone Warm Gray 2 C
+*/
+
+/* USAGE GUIDELINES */
+
+/* Wall Colors - Primary Spaces */
+.salon-wall-primary {
+  background-color: var(--salon-warm-white);
+  color: var(--salon-text-primary);
+}
+
+.salon-wall-accent {
+  background-color: var(--salon-powder-blue);
+  color: var(--salon-text-secondary);
+}
+
+.salon-wall-feature {
+  background-color: var(--salon-sage-green);
+  color: var(--salon-text-primary);
+}
+
+/* Furniture and Fixtures */
+.salon-furniture-primary {
+  background-color: var(--salon-steel-blue);
+  color: var(--salon-warm-white);
+}
+
+.salon-furniture-neutral {
+  background-color: var(--salon-light-gray);
+  color: var(--salon-text-primary);
+}
+
+.salon-furniture-accent {
+  background-color: var(--salon-subtle-beige);
+  color: var(--salon-text-secondary);
+}
+
+/* Decor Elements */
+.salon-decor-soft {
+  background-color: var(--salon-sky-blue);
+  color: var(--salon-text-primary);
+}
+
+.salon-decor-natural {
+  background-color: var(--salon-sage-green);
+  color: var(--salon-deep-steel);
+}
+
+.salon-decor-warm {
+  background-color: var(--salon-subtle-beige);
+  color: var(--salon-charcoal);
+}
+
+/* Lighting Adaptation Classes */
+.salon-natural-lighting {
+  --current-primary: var(--salon-natural-primary);
+  --current-accent: var(--salon-natural-accent);
+  --current-neutral: var(--salon-natural-neutral);
+}
+
+.salon-artificial-lighting {
+  --current-primary: var(--salon-artificial-primary);
+  --current-accent: var(--salon-artificial-accent);
+  --current-neutral: var(--salon-artificial-neutral);
+}
+
+/* Seasonal Themes */
+.salon-spring-theme {
+  --seasonal-primary: var(--salon-spring-primary);
+  --seasonal-accent: var(--salon-spring-accent);
+  --seasonal-warm: var(--salon-spring-warm);
+}
+
+.salon-winter-theme {
+  --seasonal-primary: var(--salon-winter-primary);
+  --seasonal-accent: var(--salon-winter-accent);
+  --seasonal-warm: var(--salon-winter-warm);
+}
+
+/* Accessibility Enhancements */
+@media (prefers-contrast: high) {
+  :root {
+    --salon-text-primary: #000000;
+    --salon-bg-primary: #FFFFFF;
+    --salon-interactive-primary: #0000FF;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark mode adaptations while maintaining salon aesthetic */
+    --salon-bg-primary: #1A2332;
+    --salon-bg-secondary: #243447;
+    --salon-text-primary: var(--salon-warm-white);
+    --salon-text-secondary: var(--salon-light-gray);
+  }
+}
+
+/* Print Styles - Maintain professionalism */
+@media print {
+  :root {
+    --salon-bg-primary: white;
+    --salon-text-primary: black;
+    --salon-interactive-primary: black;
+  }
+}

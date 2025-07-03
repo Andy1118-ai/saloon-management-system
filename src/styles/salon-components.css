@@ -1,0 +1,360 @@
+/* Salon-Specific Component Styling */
+
+/* Apply salon palette to existing components */
+.salon-themed {
+  /* Button Components */
+  --color-primary-50: var(--salon-powder-blue);
+  --color-primary-100: var(--salon-sky-blue);
+  --color-primary-500: var(--salon-steel-blue);
+  --color-primary-600: var(--salon-deep-steel);
+  --color-primary-700: var(--salon-charcoal);
+  
+  /* Secondary Colors */
+  --color-secondary-500: var(--salon-sage-green);
+  --color-secondary-600: var(--salon-soft-sage);
+  
+  /* Neutral Colors */
+  --color-neutral-50: var(--salon-warm-white);
+  --color-neutral-100: var(--salon-light-gray);
+  --color-neutral-200: var(--salon-medium-gray);
+  --color-neutral-500: var(--salon-steel-blue);
+  --color-neutral-800: var(--salon-deep-steel);
+  --color-neutral-900: var(--salon-charcoal);
+  
+  /* Background */
+  background-color: var(--salon-bg-primary);
+  color: var(--salon-text-primary);
+}
+
+/* Salon Header Styling */
+.salon-header {
+  background: linear-gradient(135deg, 
+    var(--salon-steel-blue) 0%, 
+    var(--salon-sky-blue) 100%);
+  color: var(--salon-warm-white);
+  border-bottom: 1px solid var(--salon-border-light);
+}
+
+/* Salon Navigation */
+.salon-nav {
+  background-color: var(--salon-warm-white);
+  border-right: 1px solid var(--salon-border-light);
+}
+
+.salon-nav-item {
+  color: var(--salon-text-secondary);
+  transition: all 0.2s ease;
+}
+
+.salon-nav-item:hover {
+  background-color: var(--salon-powder-blue);
+  color: var(--salon-deep-steel);
+}
+
+.salon-nav-item.active {
+  background-color: var(--salon-sage-green);
+  color: var(--salon-charcoal);
+  border-right: 3px solid var(--salon-steel-blue);
+}
+
+/* Salon Cards */
+.salon-card {
+  background-color: var(--salon-warm-white);
+  border: 1px solid var(--salon-border-light);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(var(--salon-steel-blue-rgb), 0.1);
+  transition: all 0.3s ease;
+}
+
+.salon-card:hover {
+  box-shadow: 0 4px 16px rgba(var(--salon-steel-blue-rgb), 0.15);
+  transform: translateY(-2px);
+}
+
+.salon-card-header {
+  background: linear-gradient(90deg, 
+    var(--salon-powder-blue) 0%, 
+    var(--salon-sage-green) 100%);
+  color: var(--salon-deep-steel);
+  padding: 1rem 1.5rem;
+  border-radius: 12px 12px 0 0;
+}
+
+/* Salon Buttons */
+.salon-btn-primary {
+  background: linear-gradient(135deg, 
+    var(--salon-steel-blue) 0%, 
+    var(--salon-deep-steel) 100%);
+  color: var(--salon-warm-white);
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.salon-btn-primary:hover {
+  background: linear-gradient(135deg, 
+    var(--salon-deep-steel) 0%, 
+    var(--salon-charcoal) 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(var(--salon-steel-blue-rgb), 0.3);
+}
+
+.salon-btn-secondary {
+  background-color: var(--salon-sage-green);
+  color: var(--salon-deep-steel);
+  border: 1px solid var(--salon-soft-sage);
+}
+
+.salon-btn-secondary:hover {
+  background-color: var(--salon-soft-sage);
+  border-color: var(--salon-steel-blue);
+}
+
+.salon-btn-outline {
+  background-color: transparent;
+  color: var(--salon-steel-blue);
+  border: 2px solid var(--salon-steel-blue);
+}
+
+.salon-btn-outline:hover {
+  background-color: var(--salon-steel-blue);
+  color: var(--salon-warm-white);
+}
+
+/* Salon Forms */
+.salon-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.salon-form-label {
+  color: var(--salon-text-secondary);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.salon-form-input {
+  background-color: var(--salon-warm-white);
+  border: 2px solid var(--salon-border-light);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  color: var(--salon-text-primary);
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.salon-form-input:focus {
+  outline: none;
+  border-color: var(--salon-steel-blue);
+  box-shadow: 0 0 0 3px rgba(var(--salon-steel-blue-rgb), 0.1);
+}
+
+/* Salon Tables */
+.salon-table {
+  background-color: var(--salon-warm-white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(var(--salon-steel-blue-rgb), 0.1);
+}
+
+.salon-table-header {
+  background-color: var(--salon-light-gray);
+  color: var(--salon-text-secondary);
+  font-weight: 600;
+}
+
+.salon-table-row {
+  border-bottom: 1px solid var(--salon-border-light);
+  transition: background-color 0.2s ease;
+}
+
+.salon-table-row:hover {
+  background-color: var(--salon-powder-blue);
+}
+
+/* Salon Status Indicators */
+.salon-status-success {
+  background-color: var(--salon-success);
+  color: var(--salon-deep-steel);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.salon-status-warning {
+  background-color: var(--salon-warning);
+  color: var(--salon-charcoal);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.salon-status-error {
+  background-color: var(--salon-error);
+  color: var(--salon-deep-steel);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Salon Modals */
+.salon-modal-overlay {
+  background-color: rgba(var(--salon-charcoal-rgb), 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.salon-modal-content {
+  background-color: var(--salon-warm-white);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(var(--salon-steel-blue-rgb), 0.2);
+  border: 1px solid var(--salon-border-light);
+}
+
+.salon-modal-header {
+  background: linear-gradient(90deg, 
+    var(--salon-powder-blue) 0%, 
+    var(--salon-sage-green) 100%);
+  color: var(--salon-deep-steel);
+  padding: 1.5rem;
+  border-radius: 16px 16px 0 0;
+  border-bottom: 1px solid var(--salon-border-light);
+}
+
+/* Salon Notifications */
+.salon-notification {
+  background-color: var(--salon-warm-white);
+  border-left: 4px solid var(--salon-steel-blue);
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 4px 12px rgba(var(--salon-steel-blue-rgb), 0.15);
+  color: var(--salon-text-primary);
+}
+
+.salon-notification-success {
+  border-left-color: var(--salon-success);
+  background-color: rgba(var(--salon-success-rgb), 0.1);
+}
+
+.salon-notification-warning {
+  border-left-color: var(--salon-warning);
+  background-color: rgba(var(--salon-warning-rgb), 0.1);
+}
+
+.salon-notification-error {
+  border-left-color: var(--salon-error);
+  background-color: rgba(var(--salon-error-rgb), 0.1);
+}
+
+/* Salon Dashboard Widgets */
+.salon-widget {
+  background: linear-gradient(135deg, 
+    var(--salon-warm-white) 0%, 
+    var(--salon-light-gray) 100%);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid var(--salon-border-light);
+  box-shadow: 0 2px 8px rgba(var(--salon-steel-blue-rgb), 0.1);
+}
+
+.salon-widget-icon {
+  background: linear-gradient(135deg, 
+    var(--salon-steel-blue) 0%, 
+    var(--salon-sage-green) 100%);
+  color: var(--salon-warm-white);
+  padding: 0.75rem;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Salon Calendar */
+.salon-calendar {
+  background-color: var(--salon-warm-white);
+  border-radius: 12px;
+  border: 1px solid var(--salon-border-light);
+}
+
+.salon-calendar-header {
+  background-color: var(--salon-steel-blue);
+  color: var(--salon-warm-white);
+  padding: 1rem;
+  border-radius: 12px 12px 0 0;
+}
+
+.salon-calendar-day {
+  border: 1px solid var(--salon-border-light);
+  transition: all 0.2s ease;
+}
+
+.salon-calendar-day:hover {
+  background-color: var(--salon-powder-blue);
+}
+
+.salon-calendar-day.today {
+  background-color: var(--salon-sage-green);
+  color: var(--salon-deep-steel);
+  font-weight: 600;
+}
+
+.salon-calendar-day.selected {
+  background-color: var(--salon-steel-blue);
+  color: var(--salon-warm-white);
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .salon-card {
+    margin: 0.5rem;
+    border-radius: 8px;
+  }
+  
+  .salon-modal-content {
+    margin: 1rem;
+    border-radius: 12px;
+  }
+  
+  .salon-widget {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .salon-themed {
+    --salon-border-light: #000000;
+    --salon-text-primary: #000000;
+    --salon-bg-primary: #FFFFFF;
+  }
+  
+  .salon-btn-primary {
+    background: #000000;
+    color: #FFFFFF;
+    border: 2px solid #000000;
+  }
+  
+  .salon-btn-outline {
+    border-color: #000000;
+    color: #000000;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .salon-card,
+  .salon-btn-primary,
+  .salon-form-input,
+  .salon-table-row {
+    transition: none;
+  }
+  
+  .salon-card:hover {
+    transform: none;
+  }
+  
+  .salon-btn-primary:hover {
+    transform: none;
+  }
+}

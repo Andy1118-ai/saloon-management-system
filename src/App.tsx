@@ -13,6 +13,7 @@ import Payments from './pages/Payments';
 import Inventory from './pages/Inventory';
 import Reports from './pages/Reports';
 import UIShowcase from './pages/UIShowcase';
+import SalonColorPalette from './components/SalonColorPalette';
 import Layout from './components/Layout';
 import ProtectedRoute from './components/ProtectedRoute';
 import './index.css';
@@ -22,11 +23,12 @@ function App() {
     <AuthProvider>
       <AppProvider>
         <Router>
-          <div className="min-h-screen bg-gray-50">
+          <div className="min-h-screen bg-gray-50 salon-themed">
             <Routes>
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
               <Route path="/ui-showcase" element={<UIShowcase />} />
+              <Route path="/color-palette" element={<SalonColorPalette />} />
               <Route path="/" element={<Navigate to="/dashboard" replace />} />
               <Route element={<ProtectedRoute><Layout /></ProtectedRoute>}>
                 <Route path="/dashboard" element={<Dashboard />} />

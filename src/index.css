@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import './styles/design-tokens.css';
+@import './styles/salon-palette.css';
+@import './styles/salon-components.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,15 +19,38 @@ body {
   font-family: var(--font-family-primary);
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
-  color: var(--color-neutral-800);
-  background-color: var(--color-neutral-50);
+  color: var(--salon-text-primary);
+  background-color: var(--salon-bg-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Apply salon theme globally */
+.salon-themed {
+  /* Override default design tokens with salon palette */
+  --color-primary-50: var(--salon-powder-blue);
+  --color-primary-100: var(--salon-sky-blue);
+  --color-primary-500: var(--salon-steel-blue);
+  --color-primary-600: var(--salon-deep-steel);
+  --color-primary-700: var(--salon-charcoal);
+  
+  --color-secondary-500: var(--salon-sage-green);
+  --color-secondary-600: var(--salon-soft-sage);
+  
+  --color-neutral-50: var(--salon-warm-white);
+  --color-neutral-100: var(--salon-light-gray);
+  --color-neutral-200: var(--salon-medium-gray);
+  --color-neutral-500: var(--salon-steel-blue);
+  --color-neutral-800: var(--salon-deep-steel);
+  --color-neutral-900: var(--salon-charcoal);
+  
+  background-color: var(--salon-bg-primary);
+  color: var(--salon-text-primary);
+}
+
 /* Focus styles for accessibility */
 *:focus {
-  outline: 2px solid var(--color-primary-500);
+  outline: 2px solid var(--salon-steel-blue);
   outline-offset: 2px;
 }
 
@@ -44,35 +69,35 @@ body {
 /* High contrast mode support */
 @media (prefers-contrast: high) {
   :root {
-    --color-primary-500: #0000ff;
-    --color-neutral-800: #000000;
-    --color-neutral-50: #ffffff;
+    --salon-steel-blue: #0000ff;
+    --salon-text-primary: #000000;
+    --salon-bg-primary: #ffffff;
   }
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar with salon colors */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-neutral-100);
+  background: var(--salon-light-gray);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-neutral-300);
+  background: var(--salon-medium-gray);
   border-radius: var(--radius-full);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-neutral-400);
+  background: var(--salon-steel-blue);
 }
 
-/* Selection styles */
+/* Selection styles with salon colors */
 ::selection {
-  background-color: var(--color-primary-200);
-  color: var(--color-primary-900);
+  background-color: var(--salon-powder-blue);
+  color: var(--salon-deep-steel);
 }
 
 /* Print styles */
@@ -82,5 +107,10 @@ body {
     color: black !important;
     box-shadow: none !important;
     text-shadow: none !important;
+  }
+  
+  .salon-themed {
+    background: white !important;
+    color: black !important;
   }
 }
