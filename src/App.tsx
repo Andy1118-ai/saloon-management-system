@@ -12,6 +12,7 @@ import Customers from './pages/Customers';
 import Payments from './pages/Payments';
 import Inventory from './pages/Inventory';
 import Reports from './pages/Reports';
+import UIShowcase from './pages/UIShowcase';
 import Layout from './components/Layout';
 import ProtectedRoute from './components/ProtectedRoute';
 import './index.css';
@@ -25,6 +26,7 @@ function App() {
             <Routes>
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
+              <Route path="/ui-showcase" element={<UIShowcase />} />
               <Route path="/" element={<Navigate to="/dashboard" replace />} />
               <Route element={<ProtectedRoute><Layout /></ProtectedRoute>}>
                 <Route path="/dashboard" element={<Dashboard />} />
